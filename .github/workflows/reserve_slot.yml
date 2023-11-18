@@ -20,7 +20,7 @@ jobs:
       - name: Remove default Chromium
         run: sudo apt purge chromium-browser
       - name: Install a new Chromium
-        run: sudo apt install -y chromium-browser=112.0.5615.49
+        run: sudo apt install -y chromium-browser=1:84.0.4147.135
       - name: Install all necessary packages
         run: pip install -r requirements.txt
       - name: Run the reservation script
