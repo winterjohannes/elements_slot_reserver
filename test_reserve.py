@@ -12,12 +12,12 @@ class TestReserve:
     def setup_method(self, method):
         webdriver_options = webdriver.ChromeOptions()
         webdriver_options.add_argument("--headless")
-        options.add_argument('--no-sandbox')
+        webdriver_options.add_argument("--no-sandbox")
         self.driver = webdriver.Chrome(webdriver_options)
         self.vars = {}
 
     def teardown_method(self, method):
-        # LOGOUT
+        # LOGOUT.
         self.driver.find_element(By.CSS_SELECTOR, "div > .button").click()
         print(f"Logged out.")
 
