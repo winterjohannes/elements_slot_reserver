@@ -21,10 +21,6 @@ jobs:
         run: sudo apt purge chromium-browser
       - name: Install a new Chromium
         run: sudo apt install -y chromium-browser
-      - name: Set chromedriver version
-        run: export CHROME_DRIVER_VERSION=119.0.6045.105
-      - name: Echo chromedriver version
-        run: echo $CHROME_DRIVER_VERSION
       - name: Install all necessary packages
         run: pip install -r requirements.txt
       - name: Run the reservation script
