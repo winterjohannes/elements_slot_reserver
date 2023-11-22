@@ -12,6 +12,7 @@ class TestReserve:
     def setup_method(self, method):
         webdriver_options = webdriver.ChromeOptions()
         webdriver_options.add_argument("--headless")
+        options.add_argument('--no-sandbox')
         self.driver = webdriver.Chrome(webdriver_options)
         self.vars = {}
 
